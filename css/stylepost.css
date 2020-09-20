@@ -1,0 +1,444 @@
+body {
+    font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    padding-left: 120px;
+  }
+  
+  .logomobile {
+    width: 45px;
+    height: 45px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .logo-desk {
+    width: 112px;
+    height: 22px;
+  }
+  
+  .logohea {
+    width: 45%;
+    height: 45px;
+    margin-left: -2px;
+  }
+  
+  .iconos-h {
+    margin-top: 5px;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 32px;
+  }
+  
+  .search {
+    width: 25px;
+    height: 25px;
+    opacity: gray;
+  }
+  
+  .notify {
+    width: 25px;
+    height: 25px;
+    fill: rgba(0, 0, 0, 0.54);
+  }
+  
+  .ico-paper {
+    width: 25px;
+    height: 25px;
+    fill: rgba(0, 0, 0, 0.54);
+  }
+  
+  .usuario {
+    width: 32px;
+    height: 32px;
+    border-radius: 25px;
+  }
+  
+  .options {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    width: 20px;
+  }
+  
+  .flecha1, .flecha2 {
+    height: 21px;
+    width: 21px;
+  }
+  
+  .nav-item {
+    width: auto;
+    text-decoration: none;
+  }
+  
+  .nav {
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: none;
+  }
+  
+  .nav:hover {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .sticky-top {
+    background-color: white;
+    height: 39px;
+  }
+  
+  .container {
+    margin: 0px;
+  }
+  
+  h2 {
+      font-size: large;
+  }
+  .navbar {
+    background-image: url("https://picsum.photos/200/300");
+    max-height: 150px;
+    margin-bottom: 48px;
+    margin-top: 48px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .hover:hover {
+    cursor: pointer;
+  }
+  
+  .img_nav_scroll {
+    width: 100%;
+  }
+  
+  .cuadro_con_boton {
+    width: 62%;
+    height: 150px;
+    background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.50rem;
+  }
+  
+  .texto_cuadro_con_boton {
+    color: rgba(245, 245, 245, 0.596);
+    text-align-last: center;
+    font-size: .6rem;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  .read {
+    width: 20%;
+    font-size: .5rem;
+    color: black;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  
+  /*scroll del nav del col1*/
+  .scroll {
+    padding-left: 80px;
+  }
+  
+  .ml-3 {
+    width: 130px;
+    height: 130px;
+  }
+  
+  /*Segundo contenedor*/
+  .columna_derecha {
+    padding-top: 48px;
+    padding-left: 80px;
+  }
+  
+  .popular {
+    padding-top: 48px;
+  }
+  
+  #titulo_col_der {
+    color: black;
+    font-weight: 500;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #d6d1d1;
+    font-size: 24px;
+  }
+  
+  ol {
+    list-style-type: decimal-leading-zero;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /*font-size:1.5rem;
+      color: gainsboro;*/
+  }
+  
+  li {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    margin-top: 80px;
+    border-top: 1px solid #d6d1d1;
+    padding-top: 10px;
+    font-size: 1rem;
+    color: gray;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .footer:hover {
+    text-decoration: underline;
+  }
+  
+  /*media query*/
+  @media only screen and (max-width: 360px) {
+    body {
+      padding-left: 0px;
+    }
+    .navbar {
+      padding: 0px;
+    }
+    .cuadro_con_boton {
+      width: 100%;
+      height: 180px;
+      background-color: black;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+    .texto_cuadro_con_boton {
+      text-align: center;
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+    .ml-3 {
+      width: 50px;
+      height: 50px;
+    }
+    .media-body {
+      font-size: .6rem;
+    }
+    .scroll {
+      padding: 0px;
+    }
+    #titulo_col_der {
+      text-align: left;
+    }
+    .columna_derecha {
+      padding-left: 15px;
+    }
+    .popular {
+      padding-top: 0px;
+    }
+    footer {
+      display: none;
+    }
+  }
+  
+  /*media query*/
+  .container-wrapper {
+    background-color: darkgoldenrod;
+  }
+  
+  .right-card {
+    width: 100%;
+    height: 334px;
+    margin-right: 24px;
+  }
+  
+  .center-wrapper {
+    width: 100%;
+    height: 334px;
+    margin-right: 24px;
+  }
+  
+  .center-card {
+    width: 100%;
+    height: 33%;
+    padding: 10px;
+  }
+  
+  .left-card {
+    width: 100%;
+    height: 334px;
+    margin: 0;
+  }
+  
+  .img-container {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+  
+  .card-wrapper {
+    width: 100%;
+    height: 109px;
+  }
+  
+  .title-wrap {
+    width: 90%;
+    height: 56px;
+    margin-bottom: 12px;
+    margin-left: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+  }
+  
+  .card-article {
+    color: #919191;
+    font-weight: 400;
+    height: 20px;
+    margin-left: 24px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .card-footer {
+    height: 20px;
+    border: none;
+    background-color: white;
+    font-size: 14px;
+  }
+  
+  .anchor-style {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .card-links-wrap {
+    height: 20px;
+    margin-left: 24px;
+    color: #919191;
+  }
+  
+  .card-links {
+    text-decoration: none;
+    color: #919191;
+    font-size: 14px;
+  }
+  
+  .img-small {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    min-width: 100px;
+    margin-right: 24px;
+  }
+  
+  .title-wrap-small {
+    height: 20px;
+    margin-bottom: 4px;
+    max-width: 235px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .card-article-small {
+    color: #919191;
+    font-weight: 400;
+    width: 200px;
+    max-width: 235px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .card-footer-small {
+    height: 20px;
+    border: none;
+    background-color: white;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .card-links-wrap-small {
+    height: 20px;
+    color: #919191;
+    font-size: 12px;
+  }
+  
+  .openBtn {
+    height: 25px;
+    width: 25px;
+    background-image: url(images/articulo.svg);
+  }
+  
+  .articulo {
+    height: 20px;
+    width: 20px;
+    margin-left: -4px;
+    margin-top: -6px;
+    padding: 0px;
+    vertical-align: top;
+    -ms-flex-item-align: left;
+        -ms-grid-row-align: left;
+        align-self: left;
+  }
+  /*# sourceMappingURL=style.css.map */
