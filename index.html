@@ -57,8 +57,13 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="text-white" for="">Nombre y referencia del autor:</label>
+                        <label class="text-white" for="">Nombre del autor:</label>
                         <input type="text" id="nombre" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="text-white" for="">Referencia:</label>
+                        <input type="text" id="referencia" class="form-control">
                     </div>
 
                     <div class="form-group">
@@ -73,7 +78,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="text-white" for="">Foto:</label>
+                        <label class="text-white" for="">Imagen:</label>
                         <input type="text" id="foto" class="form-control">
                     </div>
 
@@ -84,7 +89,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="text-white d-flex" for="">Reseña:</label>
+                        <label class="text-white d-flex" for="">Publicación:</label>
                         <textarea name="bio" id="reseña" cols="45" rows="8"></textarea>
                     </div>
                     <div class="form-group">
@@ -156,75 +161,14 @@
             <div class="row">
                 <div class="col d-flex flex-column flex-md-row flex-lg-row overflow-hidden sm-mb-5">
                     <!--  ***Contenedor del mas destacado***-->
-                    <div class="col-sm-12 col-md-6 col-lg-4 right-card">
-                        <div class="img-container"><img src="https://picsum.photos/500/500" alt=""></div>
-                        <div class="card-wrapper">
-                            <h2 class="title-wrap">Seven Books That Will Change Your Life</h2>
-                            <p class="card-article">The seven books I read once a year.</p>
-                            <p class="card-footer"><a class="anchor-style" href="https://medium.com/">Jessica Lynn</a>
-                                in <a class="anchor-style" href="https://kodemia.mx/">The Happy Spot</a></p>
-                            <p class="card-links-wrap"><a class="card-links" href="">Jul 29</a> - <a class="card-links"
-                                    href="">13 min read</a></p>
-                        </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 right-card" id="post-more-share">
+                        
                     </div>
                     <!--  ***Contenedor de los siguinetes mas destacados 2,3,4 lugar***-->
-                    <div class="col-sm-12 col-md-6 col-lg-4 pr-0 pl-0 center-wrapper sm-mt-5">
-                        <div class="center-card pr-3 pl-3 d-flex flex-lg-row">
-                            <div class="img-small"><img src="https://picsum.photos/120/120" alt=""></div>
-                                <div class="smal-wrap d-flex flex-column">
-                                    <div class="mini-container">
-                                        <h5 class="title-wrap-small">UI design basics: Screens</h5>
-                                        <p class="card-article-small">The world is your canvas, but it does have
-                                            some
-                                            limits.</p>
-                                    </div>
-                                    <div class="mini-container mt-1">
-                                        <p class="card-footer-small"><a class="anchor-style"
-                                                href="https://medium.com/">Michal Malewicz</a> in <a class="anchor-style"
-                                                href="https://kodemia.mx/">UX
-                                                Collective</a></p>
-                                        <p class="card-links-wrap-small"><a class="card-links" href="">Jul
-                                                29</a> - <a class="card-links" href="">13 min read</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        <div class="center-card pr-3 pl-3 d-flex flex-lg-row">
-                            <div class="img-small"><img src="https://picsum.photos/123/123" alt=""></div>
-                            <div class="smal-wrap d-flex flex-column">
-                                <div class="mini-container">
-                                    <h5 class="title-wrap-small">Azure Key Vault Node.js Step by Step
-                                        Tutorial</h5>
-                                    <p class="card-article-small">The world is your canvas, but it does have
-                                        some
-                                        limits.</p>
-                                </div>
-                                <div class="mini-container mt-1">
-                                    <p class="card-footer-small"><a class="anchor-style"
-                                            href="https://medium.com/">Emmanuel Crown</a></p>
-                                    <p class="card-links-wrap-small"><a class="card-links" href="">Oct 9,
-                                            2018</a> - <a class="card-links" href="">5 min read</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="center-card pr-3 pl-3 d-flex flex-lg-row">
-                            <div class="img-small"><img src="https://picsum.photos/122/122" alt=""></div>
-                            <div class="smal-wrap d-flex flex-column">
-                                <div class="mini-container over">
-                                    <h5 class="title-wrap-small">
-                                        IronHack Design Thinking Exercise — Whole Bank</h5>
-                                    <p class="card-article-small">The world is your canvas, but it does have
-                                        some
-                                        limits.</p>
-                                </div>
-                                <div class="mini-container mt-1">
-                                    <p class="card-footer-small"><a class="anchor-style"
-                                            href="https://medium.com/">Jacques Trouillet</a></p>
-                                    <p class="card-links-wrap-small"><a class="card-links" href="">Dec 18,
-                                            2018</a> - <a class="card-links" href="">4 min read</a></p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 pr-0 pl-0 center-wrapper sm-mt-5" id="post-more-share2">
+                        
                     </div>
+                    <!--  ***Contenedor del mas reciente***-->
                     <div class="col-sm-0 col-md-0 col-lg-4 ml-5 overflow-hidden d-none d-lg-block" id="lastArticle">
 
                     </div>
@@ -246,103 +190,17 @@
                     </div>
                 </nav><!-- nav bar primer col termina aqui-->
 
-                <div class="scroll" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-                    <article class="media">
-                        <div class="media-body">
-                            <h5 class="hover mt-0 mb-1">Media object</h5>
-                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </div>
-                        <img src="https://picsum.photos/200" class="hover ml-3" alt="...">
-                    </article>
-                    <p>...</p>
-                    <article class="media">
-                        <div class="media-body">
-                            <h5 class="hover mt-0 mb-1">Media object</h5>
-                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </div>
-                        <img src="https://picsum.photos/200" class="hover ml-3" alt="...">
-                    </article>
-                    <p>...</p>
-                    <article class="media">
-                        <div class="media-body">
-                            <h5 class="hover mt-0 mb-1">Media object</h5>
-                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </div>
-                        <img src="https://picsum.photos/200" class="hover ml-3" alt="...">
-                    </article>
-                    <p>...</p>
-                    <article class="media">
-                        <div class="media-body">
-                            <h5 class="hover mt-0 mb-1">Media object</h5>
-                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </div>
-                        <img src="https://picsum.photos/200" class="hover ml-3" alt="...">
-                    </article>
-                    <p>...</p>
-                    <article class="media">
-                        <div class="media-body">
-                            <h5 class="hover mt-0 mb-1">Media object</h5>
-                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </div>
-                        <img src="https://picsum.photos/200" class="hover ml-3" alt="...">
-                    </article>
-                    <p>...</p>
-                    <article class="media">
-                        <div class="media-body">
-                            <h5 class="hover mt-0 mb-1">Media object</h5>
-                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </div>
-                        <img src="https://picsum.photos/200" class="hover ml-3" alt="...">
-                    </article>
-                    <p>...</p>
-                    <article class="media">
-                        <div class="media-body">
-                            <h5 class="hover mt-0 mb-1">Media object</h5>
-                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </div>
-                        <img src="https://picsum.photos/200" class="hover ml-3" alt="...">
-                    </article>
-                    <p>...</p>
-                    <article class="media">
-                        <div class="media-body">
-                            <h5 class="hover mt-0 mb-1">Media object</h5>
-                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </div>
-                        <img src="https://picsum.photos/200" class="hover ml-3" alt="...">
-                    </article>
-                    <p>...</p>
+                <div class="scroll" data-spy="scroll" data-target="#navbar-example2" data-offset="0" id="post" >
+                    
                 </div>
             </div>
             <div class="columna_derecha col-12 col-md-4">
                 <div class="popular">
                     <h3 id="titulo_col_der"><b>Popular on Medium</b></h3>
                 </div>
-                <ol>
-                    <li>
-                        <b class="hover">You're living in 1985 if you don't use Docker for your Data Science
-                            Projects</b>
-                        Sohaib Ahmad in Towards Data Science
-                        Aug 13</li>
-                    <li>
-                        <b class="hover">Why Black People Don't Go Camping</b>
-                        Nikki Brueggeman in An Injustice!
-                        Aug 10</li>
-                    <li>
-                        <b class="hover">The 5 Least Subtle Dog-Whistles About Kamala Harris, Ranked</b>
-                        LEVEL Editors in LEVEL
-                        Aug 13</li>
-                    <li>
-                        <b class="hover">Mozilla: The Greatest Tech Company Left Behind</b>
-                        Matthew MacDonald in Young Coder
-                        Aug 13</li>
+                <ol id="post-more-popular" >
+                    
+                    
                 </ol>
                 <footer>
                     <p class="footer">Help </p>

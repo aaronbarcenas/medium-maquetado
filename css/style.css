@@ -439,3 +439,11 @@ footer {
       align-self: left;
 }
 /*# sourceMappingURL=style.css.map */
+
+#imagen {
+  width: 200px;
+}
+
+#imagen img {
+  max-width: 100%;
+}
